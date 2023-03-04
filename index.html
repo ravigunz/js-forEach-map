@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="learn"></div>
+
+    <script>
+        const learnDiv = document.querySelector('#learn');
+        const p = document.createElement('h1');
+        p.innerHTML = "Hello World!";
+        learnDiv.appendChild(p);
+
+        let myArray = [1, 4, 5, 6, 9];
+        
+        let skills = ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'Material UI'];
+        
+        function something(e){
+            console.log(e);
+        }
+        
+        skills.forEach(something);
+
+        console.log('------');
+
+        function mapInnerFunction(e, i){
+            return e;
+        }
+
+        const mapResponse = skills.map(mapInnerFunction);
+        console.log(mapResponse);
+
+        </script>
+</body>
+</html>
